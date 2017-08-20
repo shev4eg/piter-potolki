@@ -1,0 +1,102 @@
+.block.img-light
+    .container
+        .block__wrapper
+            .block__info
+                .block__info__item.block__what Натяжные потолки
+                .block__info__item.block__color
+                    span.block__name с подсветкой
+                    span.block__where с гарантией качества и по лучшей цене<br>в Санкт-Петербурге
+
+
+            .block__text-info
+                .block__text-item
+                    span.block__text-info-t.block__text-info-t--icon-1 Профессиональный монтаж от 1 дня
+                .block__text-item
+                    span.block__text-info-t.block__text-info-t--icon-2 Высочайшее качество материалов
+                .block__text-item
+                    span.block__text-info-t.block__text-info-t--icon-3 Стоимость "под ключ" до 40% ниже рыночной
+                .block__text-item
+                    span.block__text-info-t.block__text-info-t--icon-4 Скидки и подарки каждому клиенту
+
+.leaders
+    .container
+        .leaders__wrapper
+            span.leaders__title Лидеры продаж
+            .leaders__block
+                .leaders__item
+                    .leaders__price
+                        span.leaders__price__text Цена:
+                        span.leaders__price__number 150руб/м
+                            sup 2
+                    span.leaders__subtitle глянцевый потолок
+                    .leaders__img
+                        img(src="img/img-leaders.png")
+                        .leaders__link-wrap
+                            a(href="#").leaders__link.leaders__link--btn-1 подробнее
+                            a(href="#").leaders__link.leaders__link--btn-2 заказать
+                .leaders__item
+                    .leaders__price
+                        span.leaders__price__text Цена:
+                        span.leaders__price__number 150руб/м
+                            sup 2
+                    span.leaders__subtitle глянцевый потолок
+                    .leaders__img
+                        img(src="img/img-leaders.png")
+                        .leaders__link-wrap
+                            a(href="#").leaders__link.leaders__link--btn-1 подробнее
+                            a(href="#").leaders__link.leaders__link--btn-2 заказать
+            a(href="#").leaders__more
+                span Показать еще
+
+.price.img-light
+    .container
+        .price__wrapper
+            span.price__title Расчет стоимости «Под ключ»
+            .price__block
+                .price__item.price__item--black
+                    span.price__item__title В стоимость входит:
+                    .price__btn-wrap
+                        .price__btn-wrap__item.price__btn-wrap__item--1 Стоимость материала
+                        .price__btn-wrap__item.price__btn-wrap__item--2 Монтаж
+                        .price__btn-wrap__item.price__btn-wrap__item--3 Отделка
+                        .price__btn-wrap__item.price__btn-wrap__item--4 Уборка
+                        .price__btn-wrap__item.price__btn-wrap__item--5 Утелизация отходов
+                .price__item.price__item--white
+                    form.price__form#price-form
+                        label(for="price-1").price__label.price__label--label-1
+                            span.price__form-title Площадь потолка:
+                            input(type="text" name="sq" id="price-1").price__input.number
+                            span.price__form-title м
+                                sup 2
+                        label(for="price-2").price__label
+                            span.price__form-title Кол-во светильников:
+                            input(type="text" name="q" id="price-2").price__input.number
+                            span.price__form-title шт.
+                        .price__quantity
+                            span.price__quantity-name Цена:
+                            span.price__quantity-price 8.790
+                            span.price__quantity-rub руб
+                        .price__tel
+                            label.price__label
+                                input(type="text" placeholder="Введите Ваш телефон..." name="tel").price__phone-input.number
+                            input(type="submit" value="отправить").price__submit
+
+.action
+    .container
+        .action__wrapper
+            .action__info
+                span.action__title Акции этого месяца
+                span.action__subtitle Дарим светильники
+                span.action__text На каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов
+                span.action__btn отправить заявку
+            .action__slider#slider
+                img(src="img/slide.jpg" alt="")
+                img(src="img/slide.jpg" alt="")
+                img(src="img/slide.jpg" alt="")
+    .action__control
+        .container
+            .action__control__wrapper
+                a(href="#" data-slider="slickPrev").action__control__btn.left.js-shop-arrows
+                    span.action__control--left
+                a(href="#" data-slider="slickNext").action__control__btn.right.js-shop-arrows
+                    span.action__control--right

@@ -1,0 +1,163 @@
+.header {
+  padding-bottom: 20px;
+
+  @media (max-width: $screen-md-max) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 150px;
+  }
+
+
+  &__wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 156px;
+    height: 84px;
+    margin-left: 52px;
+
+    @media (max-width: $screen-lg-max) {
+      margin-left: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+    margin-left: 62px;
+
+    @media (max-width: $screen-lg-max) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $screen-md-max) {
+      position: absolute;
+      width: 100%;
+      margin-top: 0;
+      top: 110px;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: $screen-xs-max) {
+        top: 190px;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    &__item {
+      position: relative;
+      font-family: 'muller-l', sans-serif;
+      font-size: 15px;
+      color: #181818;
+      font-weight: 600;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+
+      @media (max-width: $screen-xs-max) {
+        padding: 2px;
+      }
+
+      &:hover {
+        color: #666666;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+      }
+
+      &--calc {
+        &:before {
+          width: 16px;
+          height: 16px;
+          background: url("../img/pngsprite/ico-calculator.png") no-repeat center;
+          background-size: 100%;
+          left: -22px;
+          top: -1px;
+        }
+      }
+
+      &--action{
+        &:before {
+          width: 20px;
+          height: 20px;
+          background: url("../img/pngsprite/ico-percentage.png") no-repeat center;
+          background-size: 100%;
+          left: -27px;
+        }
+      }
+
+      &--zaim{
+        &:before {
+          width: 27px;
+          height: 20px;
+          background: url("../img/pngsprite/ico-measure.png") no-repeat center;
+          background-size: 100%;
+          left: -34px;
+          top: -2px;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 68px;
+
+        @media (max-width: $screen-xs-max) {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    margin-right: 31px;
+
+    @media (max-width: $screen-lg-max) {
+      margin-right: 0;
+    }
+
+    &__tel {
+      display: inline-block;
+      font-family: 'MullerExtraBold', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #000;
+      margin-bottom: 4px;
+    }
+
+    &__text {
+      display: inline-block;
+      font-family: 'MullerUltraLight', sans-serif;
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 1px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: -.8px;
+    }
+  }
+}

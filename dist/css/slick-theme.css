@@ -1,0 +1,41 @@
+.slick-loading .slick-list
+{
+    background: #fff url('../img/ajax-loader.gif') center center no-repeat;
+}
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 1001;
+    display: block;
+    width: 45px;
+    height: 52px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev
+{
+    left: -35px;
+    background-image: url(../img/sprite.png);
+    background-position: -68px 0;
+}
+.slick-next
+{
+    right: -35px;
+    background-image: url(../img/sprite.png);
+    background-position: 0 -36px;
+}
+.slick-prev:hover,
+.slick-next:hover {
+    box-shadow: 0 0 7px #debf8d;
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'MullerBold';
+    src: url('fonts/MullerBold.eot');
+    src: url('fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MullerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerExtraBold';
+    src: url('fonts/MullerExtraBold.eot');
+    src: url('fonts/MullerExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MullerExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerLight';
+    src: url('fonts/MullerLight.eot');
+    src: url('fonts/MullerLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MullerLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerUltraLight';
+    src: url('fonts/MullerUltraLight.eot');
+    src: url('fonts/MullerUltraLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MullerUltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+$mb: 'MullerBold',Arial,sans-serif;
+$meb: 'MullerExtraBold',Arial,sans-serif;
+$ml: 'MullerLight',Arial,sans-serif;
+$mul: 'MullerUltraLight',Arial,sans-serif;
+
